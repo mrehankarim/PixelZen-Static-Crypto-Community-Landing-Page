@@ -1,0 +1,109 @@
+/* navbar.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+nav {
+  width: 100%;
+  height: 80px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-container {
+  margin: auto;
+  width: 80vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  letter-spacing: 0.75;
+}
+
+.nav-container ul li a {
+  font-size: 16px;
+  color: #4b5766;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.logo {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #6058ea;
+  font-weight: 900;
+  font-style: oblique;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.firstMenu {
+  color: #6058ea !important;
+  font-weight: bold;
+}
+
+.btn-light {
+  border: 1px solid #6058ea;
+  border-radius: 10px;
+  color: #6058ea;
+  background: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 13px 25px;
+  font-weight: bold;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+/* Hamburger Menu Styles */
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #4b5766;
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-container ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle.open .hamburger:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.open .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open .hamburger:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-container ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust according to your design */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust background color as needed */
+    z-index: 1000;
+  }
+}

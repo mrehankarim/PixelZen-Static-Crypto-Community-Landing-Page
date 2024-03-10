@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main {
+  width: 90vw;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f6ff;
+  margin: auto;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.right {
+  position: relative;
+  top: 120px;
+}
+.left {
+  text-wrap: wrap;
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left h1 {
+  display: inline;
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  line-height: 80px;
+  color: #232536;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+.left p {
+  font-size: 16px;
+  color: #232536;
+  letter-spacing: 0.75;
+  line-height: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+.btn-dark {
+  border: 1px solid #6058ea;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #6058ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 13px 25px;
+  font-weight: bold;
+  line-height: 24px;
+  cursor: pointer;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 1130px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
